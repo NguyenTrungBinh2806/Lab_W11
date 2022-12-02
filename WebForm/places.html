@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+    <script src="place.js"></script>
+</head>
+<body onload="page_load()">
+    <br>
+    <div style="text-align: center;">
+        <h2>PLACE LIST</h2>
+        <input type="text" id="txtKeyword" placeholder="Search for names..">&nbsp;
+        <input type="button" value="SEARCH" onclick="btnSearch_Click()"/>
+        <br/>
+        <br/>
+        <table id="lstPlace" border="1" style="margin: 0 auto;"></table>
+        <br/>
+        <h2>PLACE DETAILS</h2>
+        <table style="margin: 0 auto;">
+            <tr>
+                <td>Code</td>
+                <td><input type="text" id="txtCode" /></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="txtName" /></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" id="txtAddress" /></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td><input type="text" id="txtDescription" /></td>
+            </tr>  
+            <tr>
+                <td>Nation</td>
+                <td><input type="text" id="txtNation" /></td>
+            </tr>
+            <tr>
+                <td>Rate</td>
+                <td><input type="text" id="txtRate" /></td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td><input type="text" id="txtImage" /></td>
+            </tr> 
+            </table>
+            <tr>
+                <br/>
+                <input type="button" value="ADD NEW" onclick="btnAdd_Click()"/>
+                <input type="button" value="UPDATE" onclick="btnUpdate_Click()"/>
+                <input type="button" value="DELETE" onclick="btnDelete_Click()" style="background-color: rgb(235, 76, 76);"/>
+            </tr>
+        </div>
+    </div>
+</body>
+</html>
